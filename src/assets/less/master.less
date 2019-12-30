@@ -1,0 +1,204 @@
+
+@import "navigation";
+@import "pageContent";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #f1f3f4;
+}
+
+
+body{
+	
+	&.active{
+		.virtunus__sidemenu_area{
+			left: 0;
+
+		}
+
+		.virtunus__page_content{
+			margin-left: 366px;
+		}
+	}
+	
+	&.todo-list-page{
+		.virtunus__sidemenu_area{
+			width:366px;
+			left:0;
+
+			.side_nav {
+				li {
+					position: relative;
+
+					a{
+						color: #7d7885;
+
+						i{
+							display: initial;
+						   align-items: initial;
+						   justify-content: initial;
+						   margin-right: inherit;
+						   float: none;
+						   margin-top: inherit;
+						}
+
+						.fa-angle-down {
+						    float: right;
+						    position: absolute;
+						    right: 30px;
+						    transform: rotate(0);
+						    margin-top: 6px;
+						}
+					}
+					&.to-do{
+						a.active{
+							background: #fff;
+							box-shadow: 0px 13px 16px 4px #eaf2f6;
+
+						}
+					}
+
+
+					ul.dropdown_menu{
+						padding-left: 50px;
+
+						li{
+							a{
+								&:hover{
+									background: transparent;
+								}
+
+								padding: 14px 45px;
+							}
+
+							&.new-list{
+								a{
+									i{
+										float: none;
+									   color: #2291fe;
+									}
+								}
+							}
+						}
+					}
+				
+				}
+			}
+
+		}
+
+		.virtunus__page_content{
+			margin-left: 366px;
+		}
+	}
+
+	&.todo-list-page.sidebar-icon-only{
+		.virtunus__sidemenu_area {
+		
+			width:104px;
+			padding-top: 70px;
+			left:0;
+
+			.side_logo_area{
+				background: none;
+				padding: 8px 0px;
+				display: block;
+				text-align: center;
+				margin-left: 0px;;
+
+				.side_user_info{
+					display:none;
+				}
+			}
+
+			.side_nav{
+				a{
+					padding: 8px 0px;
+					text-align: center;
+					position:relative;
+
+					&.active{
+						i{
+							transform:rotate(0deg);
+						}
+					}
+
+					&:hover{
+						background:none;
+					}
+					&.active{
+						background:none;
+
+					}
+
+					span{
+						display:none;
+					}
+					i{
+						float:none;
+						margin-right: 0px;
+
+						&:hover{
+							color:#0081ff;
+						}
+
+						&:before{
+							margin-left: 0px;
+							font-size: 24px;
+						}
+					}
+
+					.fa-angle-down {
+						display:none;
+					}
+
+					img{
+						margin-left:0px;
+					}
+
+					&:hover:before{
+						content: '';
+					    position: absolute;
+					    right: 0;
+					    top: 50%;
+					    background: #0081ff;
+					    width: 5px;
+					    height: 26px;
+					    transform: translateY(-50%);
+					}
+
+				}
+
+				.to-do{
+					a.active{
+						background: inherit;
+    					box-shadow: inherit;
+
+					}
+				}
+
+				ul.dropdown_menu{
+					display: none;
+				}
+
+			}
+
+		}
+		.top_header_area{
+			z-index:3;
+			position:relative;
+		}
+
+		.virtunus__page_content{
+			margin-left: 0;
+		}
+	}
+	
+
+}
+
+

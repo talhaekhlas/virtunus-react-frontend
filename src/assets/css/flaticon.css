@@ -1,0 +1,35 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 02/11/2019 07:30
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../vticon/Flaticon.eot");
+  src: url("../vticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../vticon/Flaticon.woff2") format("woff2"),
+       url("../vticon/Flaticon.woff") format("woff"),
+       url("../vticon/Flaticon.ttf") format("truetype"),
+       url("../vticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../vticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-calendar:before { content: "\f100"; }
+.flaticon-calendar-1:before { content: "\f101"; }
+.flaticon-star:before { content: "\f102"; }
